@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUMC Mythological Creatures Assessment</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .question { margin-bottom: 20px; }
+        button { padding: 10px 20px; font-size: 16px; }
+        #result { margin-top: 20px; padding: 20px; border: 1px solid #ccc; display: none; }
+    </style>
+</head>
+<body>
+    <h1>JUMC Mythological Creatures Assessment</h1>
+    <form id="quizForm">
+        <!-- Questions 1-20 -->
+        <div class="question">
+<h3>1. เมื่อคุณต้องตัดสินใจ คุณมักจะ:</h3>
+<label><input type="radio" name="q1" value="A"> ทำตามแรงบันดาลใจที่ทันที</label><br><label><input type="radio" name="q1" value="B"> ชั่งน้ำหนักข้อดีและข้อเสียอย่างระมัดระวัง</label><br><label><input type="radio" name="q1" value="C"> คิดถึงผลกระทบต่อทุกคนที่เกี่ยวข้อง</label><br><label><input type="radio" name="q1" value="D"> ขอคำแนะนำและรวบรวมความคิดเห็นต่างๆ</label><br></div>
+        <!-- Add questions 2-20 here -->
+<div class="question">
+<h3>2. เมื่อเกิดความขัดแย้งกับเพื่อน คุณมักจะทำอย่างไร?</h3>
+<label><input type="radio" name="q2" value="A"> พยายามหลีกเลี่ยงความขัดแย้งและหวังว่าปัญหาจะคลี่คลายไปเอง</label><br><label><input type="radio" name="q2" value="B"> เผชิญหน้ากับความขัดแย้งอย่างตรงไปตรงมาและพยายามหาทางออกร่วมกัน</label><br><label><input type="radio" name="q2" value="C"> หาทางประนีประนอมเพื่อรักษาความสัมพันธ์และความสงบ</label><br><label><input type="radio" name="q2" value="D"> พิจารณาสถานการณ์อย่างรอบคอบก่อนที่จะตอบสนอง</label><br></div>
+
+<div class="question">
+<h3>3. อะไรที่กระตุ้นให้คุณอยากเริ่มโครงการใหม่มากที่สุด?</h3>
+<label><input type="radio" name="q3" value="A"> โอกาสในการสำรวจและสร้างสรรค์แนวคิดใหม่ๆ</label><br><label><input type="radio" name="q3" value="B"> โอกาสในการสร้างผลงานที่เป็นรูปธรรมและวัดผลได้</label><br><label><input type="radio" name="q3" value="C"> โอกาสในการสร้างผลกระทบเชิงบวกต่อผู้อื่นและสังคม</label><br><label><input type="radio" name="q3" value="D"> โอกาสในการวางแผนและจัดการโครงการอย่างเป็นระบบ</label><br></div>
+
+<div class="question">
+<h3>4. ในกิจกรรมกลุ่ม คุณมักจะมีบทบาทอย่างไร?</h3>
+<label><input type="radio" name="q4" value="A"> เป็นผู้นำเสนอความคิดและไอเดียใหม่ๆ</label><br><label><input type="radio" name="q4" value="B"> เป็นผู้นำทีมและตัดสินใจ</label><br><label><input type="radio" name="q4" value="C"> เป็นผู้สนับสนุนและให้กำลังใจสมาชิกในทีม</label><br><label><input type="radio" name="q4" value="D"> เป็นผู้สังเกตการณ์และวิเคราะห์พลวัตของกลุ่ม</label><br></div>
+
+<div class="question">
+<h3>5. อะไรคือความกลัวที่ใหญ่ที่สุดของคุณ?</h3>
+<label><input type="radio" name="q5" value="A"> การถูกทอดทิ้งหรือรู้สึกว่าตนเองไร้คุณค่า</label><br><label><input type="radio" name="q5" value="B"> การล้มเหลวหรือถูกมองว่าไม่ประสบความสำเร็จ</label><br><label><input type="radio" name="q5" value="C"> การเกิดความขัดแย้งหรือความไม่ลงรอยในความสัมพันธ์</label><br><label><input type="radio" name="q5" value="D"> การเผชิญกับสถานการณ์ที่ควบคุมไม่ได้หรือไม่ได้เตรียมพร้อม</label><br></div>
+
+<div class="question">
+<h3>6. คุณชอบใช้เวลาว่างอย่างไร?</h3>
+<label><input type="radio" name="q6" value="A"> ทดลองทำกิจกรรมหรืองานอดิเรกใหม่ๆ</label><br><label><input type="radio" name="q6" value="B"> ทำโครงการส่วนตัวหรือพยายามบรรลุเป้าหมายที่ตั้งไว้</label><br><label><input type="radio" name="q6" value="C"> ใช้เวลาคุณภาพกับเพื่อนสนิทหรือครอบครัว</label><br><label><input type="radio" name="q6" value="D"> ใช้เวลาอยู่กับตัวเองอย่างสงบเพื่อไตร่ตรองและผ่อนคลาย</label><br></div>
+
+<div class="question">
+<h3>7. เมื่อเจอกับงานที่ท้าทาย คุณรู้สึกอย่างไร?</h3>
+<label><input type="radio" name="q7" value="A"> รู้สึกตื่นเต้นและกระตือรือร้นที่จะเผชิญหน้ากับความท้าทาย</label><br><label><input type="radio" name="q7" value="B"> รู้สึกระมัดระวังและพยายามเตรียมตัวให้พร้อมที่สุด</label><br><label><input type="radio" name="q7" value="C"> รู้สึกกังวลแต่มุ่งมั่นที่จะทำให้สำเร็จ</label><br><label><input type="radio" name="q7" value="D"> มองหาการสนับสนุนและคำแนะนำจากผู้อื่น</label><br></div>
+
+<div class="question">
+<h3>8. คุณมีวิธีรับมือกับคำวิจารณ์อย่างไร?</h3>
+<label><input type="radio" name="q8" value="A"> รู้สึกเจ็บปวดแต่พยายามเปิดใจรับฟังและยอมรับ</label><br><label><input type="radio" name="q8" value="B"> วิเคราะห์ความถูกต้องของคำวิจารณ์และหาทางปรับปรุงตนเอง</label><br><label><input type="radio" name="q8" value="C"> พยายามมองในแง่บวกและใช้คำวิจารณ์เป็นโอกาสในการพัฒนา</label><br><label><input type="radio" name="q8" value="D"> พยายามเข้าใจมุมมองของผู้วิจารณ์และเหตุผลเบื้องหลัง</label><br></div>
+
+<div class="question">
+<h3>9. ในเวลาว่าง คุณมักจะทำอะไร?</h3>
+<label><input type="radio" name="q9" value="A"> สำรวจและทดลองความคิดสร้างสรรค์ใหม่ๆ</label><br><label><input type="radio" name="q9" value="B"> ทำงานเพื่อบรรลุเป้าหมายส่วนตัวที่ตั้งไว้</label><br><label><input type="radio" name="q9" value="C"> เข้าร่วมกิจกรรมทางสังคมกับคนที่คุณรักและใส่ใจ</label><br><label><input type="radio" name="q9" value="D"> ไตร่ตรองประสบการณ์ที่ผ่านมาและวางแผนสำหรับอนาคต</label><br></div>
+
+<div class="question">
+<h3>10. ในการทำงานเป็นทีม คุณมักจะมีบทบาทอย่างไร?</h3>
+<label><input type="radio" name="q10" value="A"> เป็นผู้คิดค้นไอเดียและนวัตกรรมใหม่ๆ</label><br><label><input type="radio" name="q10" value="B"> เป็นผู้จัดการและแบ่งงานให้สมาชิกในทีม</label><br><label><input type="radio" name="q10" value="C"> เป็นผู้สนับสนุนและส่งเสริมความร่วมมือในทีม</label><br><label><input type="radio" name="q10" value="D"> เป็นผู้สังเกตการณ์และให้ข้อเสนอแนะเชิงวิเคราะห์</label><br></div>
+
+<div class="question">
+<h3>11. อะไรคือสิ่งที่คุณให้คุณค่ามากที่สุดในชีวิต?</h3>
+<label><input type="radio" name="q11" value="A"> ความจริงใจและการเป็นตัวของตัวเองอย่างแท้จริง</label><br><label><input type="radio" name="q11" value="B"> ความสำเร็จและการได้รับการยอมรับจากผู้อื่น</label><br><label><input type="radio" name="q11" value="C"> ความสัมพันธ์ที่ลึกซึ้งและการเชื่อมโยงกับผู้อื่น</label><br><label><input type="radio" name="q11" value="D"> ความรู้และความเข้าใจในสิ่งต่างๆ อย่างลึกซึ้ง</label><br></div>
+
+<div class="question">
+<h3>12. คุณมีวิธีจัดการกับความเครียดอย่างไร?</h3>
+<label><input type="radio" name="q12" value="A"> ถอยออกมาจากสถานการณ์และใช้เวลาไตร่ตรอง</label><br><label><input type="radio" name="q12" value="B"> ลงมือจัดการกับปัญหาที่เป็นสาเหตุของความเครียดทันที</label><br><label><input type="radio" name="q12" value="C"> หาการสนับสนุนทางอารมณ์จากเพื่อนหรือครอบครัว</label><br><label><input type="radio" name="q12" value="D"> วางแผนอย่างเป็นระบบเพื่อจัดการกับความเครียด</label><br></div>
+
+<div class="question">
+<h3>13. อะไรคือเป้าหมายหลักในชีวิตของคุณ?</h3>
+<label><input type="radio" name="q13" value="A"> ค้นหาความหมายและจุดประสงค์ที่แท้จริงของชีวิต</label><br><label><input type="radio" name="q13" value="B"> ประสบความสำเร็จและบรรลุเป้าหมายที่ตั้งไว้</label><br><label><input type="radio" name="q13" value="C"> สร้างและรักษาความสัมพันธ์ที่มีความสุขและสงบสุข</label><br><label><input type="radio" name="q13" value="D"> สร้างความมั่นคงและความปลอดภัยในชีวิต</label><br></div>
+
+<div class="question">
+<h3>14. คุณมีวิธีพัฒนาตัวเองอย่างไร?</h3>
+<label><input type="radio" name="q14" value="A"> แสวงหาประสบการณ์และความรู้ใหม่ๆ อยู่เสมอ</label><br><label><input type="radio" name="q14" value="B"> ตั้งเป้าหมายที่ท้าทายและทุ่มเททำงานอย่างหนัก</label><br><label><input type="radio" name="q14" value="C"> พัฒนาความสัมพันธ์และความฉลาดทางอารมณ์</label><br><label><input type="radio" name="q14" value="D"> วิเคราะห์พฤติกรรมของตนเองและวางแผนปรับปรุง</label><br></div>
+
+<div class="question">
+<h3>15. เมื่อเผชิญกับสถานการณ์ที่ยากลำบาก คุณมักจะ:</h3>
+<label><input type="radio" name="q15" value="A"> พยายามมองภาพรวมและทำความเข้าใจสถานการณ์อย่างถี่ถ้วน</label><br><label><input type="radio" name="q15" value="B"> เข้าควบคุมสถานการณ์และหาทางแก้ไขปัญหาอย่างรวดเร็ว</label><br><label><input type="radio" name="q15" value="C"> มองหาการสนับสนุนและความช่วยเหลือจากผู้อื่น</label><br><label><input type="radio" name="q15" value="D"> พยายามมองหาแง่มุมเชิงบวกและพิจารณาทางเลือกต่างๆ</label><br></div>
+
+<div class="question">
+<h3>16. ประเภทของงานที่คุณชื่นชอบมากที่สุดคือ:</h3>
+<label><input type="radio" name="q16" value="A"> งานที่เปิดโอกาสให้ใช้ความคิดสร้างสรรค์และสร้างนวัตกรรม</label><br><label><input type="radio" name="q16" value="B"> งานที่มีโครงสร้างชัดเจนและมีเป้าหมายที่วัดผลได้</label><br><label><input type="radio" name="q16" value="C"> งานที่ต้องอาศัยความร่วมมือและการทำงานเป็นทีม</label><br><label><input type="radio" name="q16" value="D"> งานที่ต้องใช้ทักษะการวิเคราะห์และความละเอียดรอบคอบ</label><br></div>
+
+<div class="question">
+<h3>17. คุณมักจะสื่อสารกับผู้อื่นในลักษณะใด?</h3>
+<label><input type="radio" name="q17" value="A"> สร้างแรงบันดาลใจและกระตุ้นให้ผู้อื่นเกิดความกระตือรือร้น</label><br><label><input type="radio" name="q17" value="B"> ให้ข้อมูลที่ชัดเจน ตรงประเด็น และกระชับ</label><br><label><input type="radio" name="q17" value="C"> แสดงความเข้าใจและให้การสนับสนุนทางอารมณ์</label><br><label><input type="radio" name="q17" value="D"> นำเสนอข้อมูลอย่างมีเหตุผลและอ้างอิงข้อเท็จจริง</label><br></div>
+
+<div class="question">
+<h3>18. สภาพแวดล้อมการทำงานแบบใดที่คุณรู้สึกว่าเหมาะสมกับคุณมากที่สุด?</h3>
+<label><input type="radio" name="q18" value="A"> สภาพแวดล้อมที่มีความเปลี่ยนแปลงและความท้าทายอยู่เสมอ</label><br><label><input type="radio" name="q18" value="B"> สภาพแวดล้อมที่มีระเบียบ โครงสร้างชัดเจน และมีการจัดการที่ดี</label><br><label><input type="radio" name="q18" value="C"> สภาพแวดล้อมที่เน้นความร่วมมือและบรรยากาศที่เป็นมิตร</label><br><label><input type="radio" name="q18" value="D"> สภาพแวดล้อมที่สงบ เป็นระเบียบ และเอื้อต่อการทำงานอย่างมีสมาธิ</label><br></div>
+
+<div class="question">
+<h3>19. คุณมองว่าสไตล์การเป็นผู้นำของคุณเป็นอย่างไร?</h3>
+<label><input type="radio" name="q19" value="A"> เป็นผู้นำที่มีวิสัยทัศน์และสร้างแรงบันดาลใจให้ผู้อื่น</label><br><label><input type="radio" name="q19" value="B"> เป็นผู้นำที่มีความชัดเจน เด็ดขาด และมุ่งเน้นผลลัพธ์</label><br><label><input type="radio" name="q19" value="C"> เป็นผู้นำที่ให้การสนับสนุนและเสริมพลังให้ทีม</label><br><label><input type="radio" name="q19" value="D"> เป็นผู้นำที่ใช้การวิเคราะห์และวางกลยุทธ์อย่างรอบคอบ</label><br></div>
+
+<div class="question">
+<h3>20. สิ่งที่คุณชื่นชอบมากที่สุดเกี่ยวกับงานของคุณคืออะไร?</h3>
+<label><input type="radio" name="q20" value="A"> โอกาสในการสร้างสรรค์สิ่งใหม่ๆ และคิดค้นนวัตกรรม</label><br><label><input type="radio" name="q20" value="B"> โอกาสในการประสบความสำเร็จและได้รับการยอมรับ</label><br><label><input type="radio" name="q20" value="C"> โอกาสในการช่วยเหลือและสร้างผลกระทบเชิงบวกต่อผู้อื่น</label><br><label><input type="radio" name="q20" value="D"> กระบวนการในการวิเคราะห์ปัญหาและหาทางแก้ไขอย่างเป็นระบบ</label><br></div>
+        <button type="button" onclick="submitQuiz()">ไปดูผลกันเลย!</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+    function submitQuiz() {
+        const quizForm = document.getElementById('quizForm');
+        const formData = new FormData(quizForm);
+        const answers = {};
+        for (const [key, value] of formData.entries()) {
+            answers[key] = value;
+        }
+        const analysis = analyzeAnswers(answers);
+        displayResult(analysis);
+    }
+
+    function analyzeAnswers(answers) {
+        const counts = {A: 0, B: 0, C: 0, D: 0};
+        for (const answer in answers) {
+            counts[answers[answer]]++;
+        }
+        const enneagramType = getEnneagramType(counts);
+        const discType = getDiscType(counts);
+        const mbtiType = getMbtiType(counts);
+        const creature = getMythologicalCreature(enneagramType, discType.primary, mbtiType.type);
+        return {
+            enneagramType,
+            discType,
+            mbtiType,
+            creature,
+            careerSuggestions: getCareerSuggestions(enneagramType, discType.primary, mbtiType.type)
+        };
+    }
+
+function getEnneagramType(counts) {
+            // Logic for determining the Enneagram type
+            if (counts.A >= counts.B && counts.A >= counts.C && counts.A >= counts.D) {
+                return 'Type 1 (The Reformer)';
+            } else if (counts.B >= counts.C && counts.B >= counts.D) {
+                return 'Type 2 (The Helper)';
+            } else if (counts.C >= counts.D) {
+                return 'Type 3 (The Achiever)';
+            } else if (counts.D >= counts.A) {
+                return 'Type 4 (The Individualist)';
+            } else if (counts.A > counts.D) {
+                return 'Type 5 (The Investigator)';
+            } else if (counts.B > counts.D) {
+                return 'Type 6 (The Loyalist)';
+            } else if (counts.C > counts.D) {
+                return 'Type 7 (The Enthusiast)';
+            } else if (counts.D > counts.A) {
+                return 'Type 8 (The Challenger)';
+            } else {
+                return 'Type 9 (The Peacemaker)';
+            }
+        }
+
+        function getDiscType(counts) {
+            // Detailed logic for DISC type analysis
+            const total = counts.A + counts.B + counts.C + counts.D;
+
+            // Calculate percentage for each category
+            const percentageA = (counts.A / total) * 100;
+            const percentageB = (counts.B / total) * 100;
+            const percentageC = (counts.C / total) * 100;
+            const percentageD = (counts.D / total) * 100;
+
+            // Determine primary DISC type
+            let primaryType;
+            if (percentageA >= percentageB && percentageA >= percentageC && percentageA >= percentageD) {
+                primaryType = 'Influence (I)';
+            } else if (percentageB >= percentageC && percentageB >= percentageD) {
+                primaryType = 'Dominance (D)';
+            } else if (percentageC >= percentageD) {
+                primaryType = 'Steadiness (S)';
+            } else {
+                primaryType = 'Conscientiousness (C)';
+            }
+
+            // Determine secondary DISC type
+            let secondaryType;
+            if (primaryType !== 'Influence (I)' && percentageA >= percentageB && percentageA >= percentageC && percentageA >= percentageD) {
+                secondaryType = 'Influence (I)';
+            } else if (primaryType !== 'Dominance (D)' && percentageB >= percentageC && percentageB >= percentageD) {
+                secondaryType = 'Dominance (D)';
+            } else if (primaryType !== 'Steadiness (S)' && percentageC >= percentageD) {
+                secondaryType = 'Steadiness (S)';
+            } else {
+                secondaryType = 'Conscientiousness (C)';
+            }
+
+            // Return detailed result
+            return {
+                primary: primaryType,
+                secondary: secondaryType,
+                details: `Your primary DISC type is ${primaryType}, indicating that you are primarily ${getDiscDescription(primaryType)}. Your secondary DISC type is ${secondaryType}, which means you also exhibit traits of being ${getDiscDescription(secondaryType)}.`
+            };
+        }
+
+        function getDiscDescription(type) {
+            const descriptions = {
+                'Influence (I)': 'sociable, enthusiastic, and persuasive. You enjoy being around people and are often seen as charming and optimistic.',
+                'Dominance (D)': 'assertive, results-oriented, and competitive. You are driven by challenges and tend to take charge in situations.',
+                'Steadiness (S)': 'calm, reliable, and supportive. You value stability and consistency and are often seen as a good listener and team player.',
+                'Conscientiousness (C)': 'detail-oriented, analytical, and methodical. You strive for accuracy and are often seen as organized and systematic.'
+            };
+            return descriptions[type];
+        }
+
+                function getMbtiType(counts) {
+            // Detailed logic for MBTI type analysis
+            const total = counts.A + counts.B + counts.C + counts.D;
+
+            // Calculate percentage for each category
+            const percentageA = (counts.A / total) * 100;
+            const percentageB = (counts.B / total) * 100;
+            const percentageC = (counts.C / total) * 100;
+            const percentageD = (counts.D / total) * 100;
+
+            // Determine preferences for each MBTI dimension
+            const extroversion = percentageA + percentageB; // Assumed based on typical question alignment
+            const introversion = percentageC + percentageD;
+            const sensing = percentageB + percentageD;
+            const intuition = percentageA + percentageC;
+            const thinking = percentageB + percentageC;
+            const feeling = percentageA + percentageD;
+            const judging = percentageB + percentageD;
+            const perceiving = percentageA + percentageC;
+
+            // Determine each MBTI letter
+            const eOrI = extroversion >= introversion ? 'E' : 'I';
+            const sOrN = sensing >= intuition ? 'S' : 'N';
+            const tOrF = thinking >= feeling ? 'T' : 'F';
+            const jOrP = judging >= perceiving ? 'J' : 'P';
+
+            // Combine letters to form the MBTI type
+            const mbtiType = eOrI + sOrN + tOrF + jOrP;
+
+            return {
+                type: mbtiType,
+                details: `Your MBTI type is ${mbtiType}, indicating that you are primarily ${getMbtiDescription(mbtiType)}.`
+            };
+        }
+
+        function getMbtiDescription(type) {
+            const descriptions = {
+                'ISTJ': 'responsible, serious, and detail-oriented. You are known for your dependability and organizational skills.',
+                'ISFJ': 'warm, considerate, and conscientious. You are often seen as caring and supportive.',
+                'INFJ': 'insightful, inspiring, and reserved. You have a deep understanding of people and complex situations.',
+                'INTJ': 'strategic, logical, and independent. You excel in planning and executing long-term goals.',
+                'ISTP': 'practical, observant, and spontaneous. You are skilled at problem-solving in the moment.',
+                'ISFP': 'gentle, adaptable, and sensitive. You appreciate beauty and seek harmony in your surroundings.',
+                'INFP': 'idealistic, creative, and empathetic. You are driven by your values and a desire to help others.',
+                'INTP': 'analytical, curious, and independent. You enjoy exploring ideas and understanding how things work.',
+                'ESTP': 'energetic, perceptive, and resourceful. You thrive in dynamic environments and enjoy taking action.',
+                'ESFP': 'enthusiastic, friendly, and spontaneous. You are often the life of the party and enjoy being with others.',
+                'ENFP': 'enthusiastic, imaginative, and sociable. You are known for your creativity and ability to inspire others.',
+                'ENTP': 'innovative, clever, and expressive. You enjoy debating ideas and finding new solutions.',
+                'ESTJ': 'organized, direct, and practical. You excel at managing projects and ensuring things run smoothly.',
+                'ESFJ': 'caring, sociable, and cooperative. You prioritize relationships and enjoy helping others.',
+                'ENFJ': 'charismatic, empathetic, and supportive. You are a natural leader and enjoy guiding others.',
+                'ENTJ': 'confident, strategic, and efficient. You are driven by your goals and have strong leadership skills.'
+            };
+            return descriptions[type];
+        }
+
+        function getMythologicalCreature(enneagramType, discType, mbtiType) {
+    const creatures = [
+        { enneagram: 'Type 1 (The Reformer)', disc: 'Conscientiousness (C)', mbti: 'INTJ', name: 'Griffin', explanation: 'Griffins symbolize vigilance and guardianship, reflecting the INTJ\'s strategic and analytical nature, as well as the Enneagram 1\'s principled and reformative drive.' },
+        { enneagram: 'Type 2 (The Helper)', disc: 'Steadiness (S)', mbti: 'ENFJ', name: 'Unicorn', explanation: 'Unicorns symbolize purity and healing, much like ENFJs who are empathetic and supportive, with Enneagram 2\'s desire to help others and the DISC Steadiness trait of reliability.' },
+        { enneagram: 'Type 3 (The Achiever)', disc: 'Dominance (D)', mbti: 'ENTJ', name: 'Dragon', explanation: 'Dragons represent power and dominance, fitting the ambitious and leadership-oriented ENTJ, the goal-driven Enneagram 3, and the assertive DISC Dominance.' },
+        { enneagram: 'Type 4 (The Individualist)', disc: 'Influence (I)', mbti: 'INFP', name: 'Phoenix', explanation: 'The Phoenix, with its themes of rebirth and uniqueness, mirrors the INFP\'s creative and idealistic nature, the Enneagram 4\'s quest for identity, and the DISC Influence\'s expressive traits.' },
+        { enneagram: 'Type 5 (The Investigator)', disc: 'Conscientiousness (C)', mbti: 'INTP', name: 'Sphinx', explanation: 'The Sphinx, known for its wisdom and mystery, aligns with the analytical and knowledge-seeking INTP, the Enneagram 5\'s investigative drive, and the meticulous DISC Conscientiousness.' },
+        { enneagram: 'Type 6 (The Loyalist)', disc: 'Steadiness (S)', mbti: 'ISFJ', name: 'Cerberus', explanation: 'Cerberus, the guardian of the underworld, reflects the ISFJ\'s protective and dependable nature, the loyal Enneagram 6, and the stable DISC Steadiness.' },
+        { enneagram: 'Type 7 (The Enthusiast)', disc: 'Influence (I)', mbti: 'ENFP', name: 'Kitsune', explanation: 'Kitsune, the playful and mischievous fox spirit, matches the ENFP\'s energetic and imaginative personality, the adventurous Enneagram 7, and the sociable DISC Influence.' },
+        { enneagram: 'Type 8 (The Challenger)', disc: 'Dominance (D)', mbti: 'ESTJ', name: 'Minotaur', explanation: 'The Minotaur, a symbol of strength and power, fits the assertive and controlling ESTJ, the strong-willed Enneagram 8, and the commanding DISC Dominance.' },
+        { enneagram: 'Type 9 (The Peacemaker)', disc: 'Steadiness (S)', mbti: 'INFJ', name: 'Pegasus', explanation: 'Pegasus, a creature of grace and calm, aligns with the gentle and harmonious INFJ, the peace-loving Enneagram 9, and the supportive DISC Steadiness.' },
+        // Additional combinations
+        { enneagram: 'Type 1 (The Reformer)', disc: 'Dominance (D)', mbti: 'ENTJ', name: 'Griffin', explanation: 'Griffins symbolize vigilance and guardianship, reflecting the ENTJ\'s strategic and analytical nature, as well as the Enneagram 1\'s principled and reformative drive.' },
+        { enneagram: 'Type 1 (The Reformer)', disc: 'Influence (I)', mbti: 'ENFP', name: 'Phoenix', explanation: 'The Phoenix, with its themes of rebirth and uniqueness, mirrors the ENFP\'s creative and idealistic nature, the Enneagram 1\'s quest for identity, and the DISC Influence\'s expressive traits.' },
+        { enneagram: 'Type 2 (The Helper)', disc: 'Influence (I)', mbti: 'ESFP', name: 'Mermaid', explanation: 'Mermaids symbolize beauty and allure, much like ESFPs who are charismatic and friendly, with Enneagram 2\'s nurturing nature and the DISC Influence\'s sociability.' },
+        { enneagram: 'Type 3 (The Achiever)', disc: 'Steadiness (S)', mbti: 'ESFJ', name: 'Unicorn', explanation: 'Unicorns symbolize purity and healing, fitting the ESFJ\'s supportive and nurturing nature, the goal-driven Enneagram 3, and the reliable DISC Steadiness.' },
+        { enneagram: 'Type 4 (The Individualist)', disc: 'Conscientiousness (C)', mbti: 'INFJ', name: 'Sphinx', explanation: 'The Sphinx, with its wisdom and mystery, aligns with the INFJ\'s insightful and inspiring nature, the Enneagram 4\'s quest for authenticity, and the DISC Conscientiousness\'s meticulous traits.' },
+        { enneagram: 'Type 5 (The Investigator)', disc: 'Steadiness (S)', mbti: 'INTP', name: 'Golem', explanation: 'Golems, created from inanimate matter, symbolize the INTP\'s innovative and perceptive nature, the Enneagram 5\'s investigative drive, and the DISC Steadiness\'s reliability.' },
+        { enneagram: 'Type 6 (The Loyalist)', disc: 'Dominance (D)', mbti: 'ESTJ', name: 'Dragon', explanation: 'Dragons represent power and protection, fitting the ESTJ\'s assertive and leadership qualities, the loyal Enneagram 6, and the commanding DISC Dominance.' },
+        { enneagram: 'Type 7 (The Enthusiast)', disc: 'Steadiness (S)', mbti: 'ENFP', name: 'Elf', explanation: 'Elves symbolize creativity and magic, reflecting the ENFP\'s energetic and imaginative nature, the adventurous Enneagram 7, and the supportive DISC Steadiness.' },
+        { enneagram: 'Type 8 (The Challenger)', disc: 'Conscientiousness (C)', mbti: 'INTJ', name: 'Griffin', explanation: 'Griffins symbolize vigilance and guardianship, fitting the INTJ\'s strategic and analytical nature, the strong-willed Enneagram 8, and the meticulous DISC Conscientiousness.' },
+        { enneagram: 'Type 9 (The Peacemaker)', disc: 'Influence (I)', mbti: 'ENFP', name: 'Phoenix', explanation: 'The Phoenix, with its themes of rebirth and uniqueness, mirrors the ENFP\'s creative and idealistic nature, the peace-loving Enneagram 9, and the DISC Influence\'s expressive traits.' }
+    ];
+
+    // Find the matching creature
+    const matchedCreature = creatures.find(creature => 
+        creature.enneagram === enneagramType && 
+        creature.disc === discType && 
+        creature.mbti === mbtiType
+    );
+
+    // Return the matched creature or a default if not found
+    if (matchedCreature) {
+        return {
+            name: matchedCreature.name,
+            explanation: matchedCreature.explanation
+        };
+    } else {
+        // Smart fallback logic to suggest a similar creature
+        const fallbackCreature = creatures.find(creature => 
+            creature.enneagram === enneagramType && creature.disc === discType
+        ) || creatures.find(creature => creature.enneagram === enneagramType) || creatures[0];
+
+        return {
+            name: fallbackCreature.name,
+            explanation: `Based on the closest match to your personality, you are most like a ${fallbackCreature.name}. ${fallbackCreature.explanation}`
+        };
+    }
+}
+
+function getCareerSuggestions(enneagramType, discType, mbtiType) {
+    const careerSuggestions = [
+        {
+            enneagram: 'Type 1 (The Reformer)',
+            disc: 'Conscientiousness (C)',
+            mbti: 'INTJ',
+            careers: 'วิศวกร, นักวางแผนกลยุทธ์, ผู้จัดการโปรเจค, ผู้เชี่ยวชาญด้านคุณภาพ'
+        },
+        {
+            enneagram: 'Type 2 (The Helper)',
+            disc: 'Steadiness (S)',
+            mbti: 'ENFJ',
+            careers: 'นักบำบัด, ครู, นักจิตวิทยา, ผู้จัดการทรัพยากรบุคคล'
+        },
+        {
+            enneagram: 'Type 3 (The Achiever)',
+            disc: 'Dominance (D)',
+            mbti: 'ENTJ',
+            careers: 'ผู้บริหาร, ที่ปรึกษาด้านธุรกิจ, นักการตลาด, ผู้จัดการฝ่ายขาย'
+        },
+        {
+            enneagram: 'Type 4 (The Individualist)',
+            disc: 'Influence (I)',
+            mbti: 'INFP',
+            careers: 'นักเขียน, ศิลปิน, นักออกแบบ, นักจิตวิทยา'
+        },
+        {
+            enneagram: 'Type 5 (The Investigator)',
+            disc: 'Conscientiousness (C)',
+            mbti: 'INTP',
+            careers: 'นักวิจัย, นักวิทยาศาสตร์, นักพัฒนาซอฟต์แวร์, นักสถิติ'
+        },
+        {
+            enneagram: 'Type 6 (The Loyalist)',
+            disc: 'Steadiness (S)',
+            mbti: 'ISFJ',
+            careers: 'พยาบาล, ผู้จัดการสำนักงาน, นักสังคมสงเคราะห์, ผู้จัดการทรัพยากรบุคคล'
+        },
+        {
+            enneagram: 'Type 7 (The Enthusiast)',
+            disc: 'Influence (I)',
+            mbti: 'ENFP',
+            careers: 'นักโฆษณา, นักการตลาด, ผู้ประกอบการ, ที่ปรึกษาด้านการพัฒนาองค์กร'
+        },
+        {
+            enneagram: 'Type 8 (The Challenger)',
+            disc: 'Dominance (D)',
+            mbti: 'ESTJ',
+            careers: 'ผู้บริหาร, เจ้าหน้าที่รักษาความปลอดภัย, ผู้จัดการการผลิต, นักกฎหมาย'
+        },
+        {
+            enneagram: 'Type 9 (The Peacemaker)',
+            disc: 'Steadiness (S)',
+            mbti: 'INFJ',
+            careers: 'นักจิตวิทยา, ที่ปรึกษาด้านชีวิต, นักเขียน, นักบำบัด'
+        },
+        // Additional combinations
+        {
+            enneagram: 'Type 1 (The Reformer)',
+            disc: 'Dominance (D)',
+            mbti: 'ENTJ',
+            careers: 'ผู้บริหาร, ผู้จัดการโครงการ, ที่ปรึกษาด้านการจัดการ, ผู้เชี่ยวชาญด้านการปรับปรุงคุณภาพ'
+        },
+        {
+            enneagram: 'Type 2 (The Helper)',
+            disc: 'Influence (I)',
+            mbti: 'ESFP',
+            careers: 'นักบำบัด, ผู้ฝึกสอนส่วนบุคคล, นักการศึกษา, นักกิจกรรมเพื่อสังคม'
+        },
+        {
+            enneagram: 'Type 3 (The Achiever)',
+            disc: 'Steadiness (S)',
+            mbti: 'ESFJ',
+            careers: 'นักประชาสัมพันธ์, ผู้จัดการฝ่ายทรัพยากรบุคคล, นักการศึกษา, ผู้จัดการโครงการ'
+        },
+        {
+            enneagram: 'Type 4 (The Individualist)',
+            disc: 'Conscientiousness (C)',
+            mbti: 'INFJ',
+            careers: 'นักเขียน, ศิลปิน, ที่ปรึกษาด้านการพัฒนาตนเอง, นักวางแผนเชิงกลยุทธ์'
+        },
+        {
+            enneagram: 'Type 5 (The Investigator)',
+            disc: 'Steadiness (S)',
+            mbti: 'INTP',
+            careers: 'นักวิจัย, นักวิทยาศาสตร์, นักวิเคราะห์ข้อมูล, นักพัฒนาซอฟต์แวร์'
+        },
+        {
+            enneagram: 'Type 6 (The Loyalist)',
+            disc: 'Dominance (D)',
+            mbti: 'ESTJ',
+            careers: 'ผู้บริหาร, ผู้จัดการสำนักงาน, ที่ปรึกษาด้านความปลอดภัย, นักกฎหมาย'
+        },
+        {
+            enneagram: 'Type 7 (The Enthusiast)',
+            disc: 'Influence (I)',
+            mbti: 'ENFP',
+            careers: 'นักโฆษณา, นักการตลาด, นักพัฒนาธุรกิจ, ที่ปรึกษาด้านการจัดการ'
+        },
+        {
+            enneagram: 'Type 8 (The Challenger)',
+            disc: 'Conscientiousness (C)',
+            mbti: 'INTJ',
+            careers: 'ผู้บริหาร, ที่ปรึกษาด้านกลยุทธ์, นักวางแผนเชิงกลยุทธ์, ผู้เชี่ยวชาญด้านการปรับปรุงคุณภาพ'
+        },
+        {
+            enneagram: 'Type 9 (The Peacemaker)',
+            disc: 'Influence (I)',
+            mbti: 'ENFP',
+            careers: 'นักจิตวิทยา, นักบำบัด, นักเขียน, ที่ปรึกษาด้านชีวิต'
+        },
+        {
+            enneagram: 'Type 1 (The Reformer)',
+            disc: 'Influence (I)',
+            mbti: 'ENFP',
+            careers: 'นักเขียน, ศิลปิน, นักออกแบบ, ที่ปรึกษาด้านชีวิต'
+        },
+        {
+            enneagram: 'Type 2 (The Helper)',
+            disc: 'Steadiness (S)',
+            mbti: 'ISFJ',
+            careers: 'พยาบาล, ผู้จัดการทรัพยากรบุคคล, นักสังคมสงเคราะห์, นักจิตวิทยา'
+        },
+        {
+            enneagram: 'Type 3 (The Achiever)',
+            disc: 'Dominance (D)',
+            mbti: 'ENTJ',
+            careers: 'ผู้บริหาร, ที่ปรึกษาด้านธุรกิจ, ผู้จัดการฝ่ายขาย, นักการตลาด'
+        },
+        {
+            enneagram: 'Type 4 (The Individualist)',
+            disc: 'Influence (I)',
+            mbti: 'INFP',
+            careers: 'นักเขียน, ศิลปิน, นักออกแบบ, ที่ปรึกษาด้านชีวิต'
+        },
+        {
+            enneagram: 'Type 5 (The Investigator)',
+            disc: 'Conscientiousness (C)',
+            mbti: 'INTJ',
+            careers: 'นักวิจัย, นักวิทยาศาสตร์, ผู้เชี่ยวชาญด้านข้อมูล, นักพัฒนาซอฟต์แวร์'
+        },
+        {
+            enneagram: 'Type 6 (The Loyalist)',
+            disc: 'Steadiness (S)',
+            mbti: 'ISFJ',
+            careers: 'พยาบาล, ผู้จัดการทรัพยากรบุคคล, นักสังคมสงเคราะห์, นักจิตวิทยา'
+        },
+        {
+            enneagram: 'Type 7 (The Enthusiast)',
+            disc: 'Influence (I)',
+            mbti: 'ENFP',
+            careers: 'นักโฆษณา, นักการตลาด, ผู้ประกอบการ, ที่ปรึกษาด้านการพัฒนาองค์กร'
+        },
+        {
+            enneagram: 'Type 8 (The Challenger)',
+            disc: 'Dominance (D)',
+            mbti: 'ESTJ',
+            careers: 'ผู้บริหาร, เจ้าหน้าที่รักษาความปลอดภัย, ผู้จัดการการผลิต, นักกฎหมาย'
+        },
+        {
+            enneagram: 'Type 9 (The Peacemaker)',
+            disc: 'Steadiness (S)',
+            mbti: 'INFJ',
+            careers: 'นักจิตวิทยา, ที่ปรึกษาด้านชีวิต, นักเขียน, นักบำบัด'
+        }
+    ];
+
+    const matchedCareer = careerSuggestions.find(career => 
+        career.enneagram === enneagramType && 
+        career.disc === discType && 
+        career.mbti === mbtiType
+    );
+
+    if (matchedCareer) {
+        return matchedCareer.careers;
+    } else {
+        // Smart fallback logic to suggest similar careers
+        const fallbackCareer = careerSuggestions.find(career => 
+            career.enneagram === enneagramType && career.disc === discType
+        ) || careerSuggestions.find(career => career.enneagram === enneagramType) || careerSuggestions[0];
+
+        return `อาชีพที่แนะนำคือ ${fallbackCareer.careers}`;
+    }
+}
+
+    function displayResult(analysis) {
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `
+            <h2>ผลการวิเคราะห์บุคลิกภาพของคุณ</h2>
+            <p><strong>Enneagram Type:</strong> ${analysis.enneagramType}</p>
+            <p><strong>DISC Type:</strong> ${analysis.discType.primary}</p>
+            <p><strong>MBTI Type:</strong> ${analysis.mbtiType.type}</p>
+            <p><strong>สิ่งมีชีวิตในตำนานที่เหมาะสม:</strong> ${analysis.creature.name}</p>
+            <p>${analysis.creature.explanation}</p>
+            <p><strong>ข้อเสนอแนะสำหรับเส้นทางอาชีพ:</strong> ${analysis.careerSuggestions}</p>
+        `;
+    }
+    </script>
+</body>
+</html>
